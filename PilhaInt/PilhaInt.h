@@ -14,6 +14,7 @@ typedef struct _stack_{
 stack *stkCreate(int max);
 int stkDestroy(stack *stk);
 void *stkPop(stack *stk);
+void *stkTop(stack *stk);
 int stkPush(stack *stk,void *elm);
 
 #endif //PILHAINT_PILHAINT_H
