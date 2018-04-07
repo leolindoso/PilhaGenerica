@@ -65,6 +65,7 @@ int stkPush(stack *stk, void *elm){
             stk->vet[stk->top] = elm;
             return TRUE;
         }
+        printf("Pilha já está cheia!\n");
     }
     return FALSE;
 }
