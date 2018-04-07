@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/leolindoso/CLionProjects/PilhaGenerica/PilhaInt/PilhaInt.c
+stdio.h
+-
+stdlib.h
+-
+PilhaInt.h
+/home/leolindoso/CLionProjects/PilhaGenerica/PilhaInt/PilhaInt.h
+
+/home/leolindoso/CLionProjects/PilhaGenerica/PilhaInt/PilhaInt.h
+
+/home/leolindoso/CLionProjects/PilhaGenerica/PilhaInt/main.c
+stdio.h
+-
+stdlib.h
+-
+PilhaInt.h
+/home/leolindoso/CLionProjects/PilhaGenerica/PilhaInt/PilhaInt.h
+
