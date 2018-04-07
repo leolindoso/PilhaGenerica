@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/leolindoso/CLionProjects/PilhaInt/PilhaInt.c" "/home/leolindoso/CLionProjects/PilhaInt/cmake-build-debug/CMakeFiles/PilhaInt.dir/PilhaInt.c.o"
-  "/home/leolindoso/CLionProjects/PilhaInt/main.c" "/home/leolindoso/CLionProjects/PilhaInt/cmake-build-debug/CMakeFiles/PilhaInt.dir/main.c.o"
+  "/home/leolindoso/CLionProjects/PilhaGenerica/PilhaInt/PilhaInt.c" "/home/leolindoso/CLionProjects/PilhaGenerica/PilhaInt/cmake-build-debug/CMakeFiles/PilhaInt.dir/PilhaInt.c.o"
+  "/home/leolindoso/CLionProjects/PilhaGenerica/PilhaInt/main.c" "/home/leolindoso/CLionProjects/PilhaGenerica/PilhaInt/cmake-build-debug/CMakeFiles/PilhaInt.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
