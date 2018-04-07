@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/PilhaInt.dir/main.c.o CMakeFiles/PilhaInt.dir/PilhaInt.c.o  -o PilhaInt 
