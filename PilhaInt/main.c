@@ -11,10 +11,10 @@ int main(){
     while(modo == 100){
         printf("1-Cria Pilha\n2-Adiciona Elemento à Pilha\n3-Checkar Ultimo Elemento da Pilha"
                        "\n4-Retirar Ultimo Elemento da Pilha\n5-Destruir Pilha e Sair\n6-Inserir Elemento em tal posição"
-                       "\n7-Checkar Pilha\n0-Sair\n");
+                       "\n7-Inserir Elemento na Pilha em tal posição mantendo os elementos do topo\n8-Checkar Pilha\n0-Sair\n");
         scanf("%i",&modo);
         if (modo == 1){
-            if(stk != NULL){
+            if(stk == NULL){
                 printf("Informe a quantidade de elementos que quer botar na pilha: \n");
                 scanf("%i",&tam);
                 stk = stkCreate(tam);
@@ -62,11 +62,42 @@ int main(){
             for(int j = 0;j < n;j++){
                 stkPop(stk);
             }
-            stk->vet[stk->top] = (void*)i;
+            stkPush(stk,(void*)i);
             modo = 100;
         }
         if(modo == 7){
-            //printf("%i\n",stk->top);
+            stack *aux;
+            void *elm;
+            aux = stkCreate(1000);
+
+            printf("Informe um numero para pôr na Pilha: \n");
+            scanf("%i",&i);
+            printf("Informe em qual posição quer por a partir do ultimo: \n");
+            scanf("%i",&n);
+            if(aux != NULL){
+                for(int j = 0;j < n;j++){
+                    elm = stkPop(stk);
+                    printf("Tirando %i\n",(int)elm);
+                    stkPush(aux,elm);
+                }
+                stkPush(stk,(void*)i);
+                stk->max++;
+                printf("Botando %i\n",i);
+
+                for(int j = 0;j < n;j++){
+                    elm = stkPop(aux);
+                    printf("Botando %i\n",(int)elm);
+                    stkPush(stk,elm);
+                }
+
+                
+
+            }
+
+            modo = 100;
+        }
+        if(modo == 8){
+            printf("stk->top: %i\n",stk->top);
             for(int k = 0;k <= stk->top;k++){
                 printf("%i\n",(int)stk->vet[k]);
             }
