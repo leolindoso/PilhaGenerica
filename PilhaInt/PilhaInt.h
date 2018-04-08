@@ -17,4 +17,6 @@ void *stkPop(stack *stk);
 void *stkTop(stack *stk);
 int stkPush(stack *stk,void *elm);
 
+int PushINaPilha(stack *stk,void *i);
+
 #endif //PILHAINT_PILHAINT_H
