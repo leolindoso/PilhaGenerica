@@ -3,7 +3,7 @@
 #include "PilhaInt.h"
 
 int main(){
-
+ // Não desista dos seus sonhos
     stack *stk;
     int modo = 100,tam;
 
